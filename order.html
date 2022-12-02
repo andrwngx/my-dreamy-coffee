@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Homepage" >
+    <meta name="description" content="Assignment 2 Web Development - COS10005">
+    <meta name="author" content="Nguyen Vu Duy Minh">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/order.js"></script>
+    <title>Duy Minh's Assignment 2</title>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <header>
+        <a href="index.html" class="logo"><img src="images/logo.png" alt="Dreamy Cafe Logo" id="img-logo"></a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="registration.html"><img src="images/user.png" alt="Register" id="img-register"></a></li>
+                <li><a class="highlight-link" href="order.html"><img src="images/cart.png" alt="Order" id="img-order"></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Registration Form -->
+    <main>
+        <section>
+            <div class="white-container">
+                <form id="order-form" method="post" action="http://mercury.swin.edu.au/it000000/cos10005/regtest.php">
+                    <h1>Order</h1>
+                    <p><i><span class="required-field">*</span>Required</i></p>
+                    <hr><br>
+                    <div>
+                        <label for="coffee-type"><b>Your Coffee Choice</b><span class="required-field">*</span></label>
+                        <select name="coffee-type" id="coffee-type" >
+                            <option value=""> -- Select An Option -- </option>
+                            <option id="coffee-type-1" value="black-coffee">Black Coffee</option>
+                            <option id="coffee-type-2" value="milk-coffee">Milk Coffee</option>
+                            <option id="coffee-type-3" value="americano">Americano</option>
+                            <option id="coffee-type-4" value="latte">Latte</option>
+                            <option id="coffee-type-5" value="coconut-coffee">Coconut Coffee</option>
+                            <option id="coffee-type-6" value="egg-coffee">Egg Coffee</option>
+                        </select><br><br>
+                    </div>
+                    
+                    <div>
+                        <label for="coffee-quantity"><b>How Many Cups</b><span class="required-field">*</span></label>
+                        <input type="text" placeholder="" name="coffee-quantity" id="coffee-quantity" >
+                    </div>
+
+                    <div>
+                        <label><b>Delivery Options</b><span class="required-field">*</span></label>
+                        <input id="delivery-option-delivery" type="radio" name="delivery-options" value="delivery" class="delivery-options"><span>Delivery</span>
+                        <input id="delivery-option-pickup" type="radio" name="delivery-options" value="pickup" class="delivery-options" ><span>Pickup</span><br><br>
+                    </div>
+
+                    <div class="delivery-check hide">
+                        <label for="delivery-address"><b>Delivery Address</b></label>
+                        <input type="text" placeholder="" name="delivery-address" id="delivery-address" >
+                    
+                        <label for="billing-address"><b>Billing Address</b></label>
+                        <input type="text" placeholder="" name="billing-address" id="billing-address" >
+                    
+                        <label for="same-address">Same As Delivery Address</label>
+                        <input type="checkbox" value="checked" name="same-address" id="same-address"><br><br>
+                    </div>
+
+                    <div>
+                        <label for="contact-number"><b>Contact Number</b><span class="required-field">*</span></label>
+                        <input type="text" placeholder="" name="contact-number" id="contact-number" >
+                    </div>
+
+                    <div>
+                        <label for="receipt-email"><b>Email For Receipt</b><span class="required-field">*</span></label>
+                        <input type="text" placeholder="Example: abc@gmail.com" name="receipt-email" id="receipt-email" >
+                    </div>
+
+                    <div>
+                        <label><b>Payment Method</b><span class="required-field">*</span></label>
+                        <input id="pay-option-online" type="radio" name="pay-options" value="online" class="pay-options"><span>Online</span>
+                        <input id="pay-option-pickup" type="radio" name="pay-options" value="pickup" class="pay-options" ><span>On Pickup</span><br><br>
+                    </div>
+
+                    <div class="pay-check hide">
+                        <label><b>Choose Card Type</b></label>
+                        <input id="visa" type="radio" name="card-options" value="visa" class="card-options"><span>Visa</span>
+                        <input id="mastercard" type="radio" name="card-options" value="mastercard" class="card-options" ><span>Mastercard</span>
+                        <input id="american-express" type="radio" name="card-options" value="american-express" class="card-options" ><span>American Express</span><br><br>
+
+                        <label for="card-number"><b>Credit Card Number</b></label>
+                        <input type="text" placeholder="" name="card-number" id="card-number" >
+                    </div>
+
+                    <button type="submit" class="submit-btn">ORDER</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <br><br>
+        <div class="footer-content-div">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <br>
+                    <img src="images/logo-with-text.png" alt="Dreamy Cafe Logo">
+                </div>
+                <br><p>
+                    No. 2 Duong Khue, Cau Giay District, Hanoi, Vietnam
+                </p>
+            </div>
+        </div>
+        <div class="footer-copyright-div">
+            <div class="footer-copyright">
+                <h3>Copyright &copy;2022. Designed by Duy Minh</h3>
+            </div>
+        </div>
+    </footer>
+</body>

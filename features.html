@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Homepage" >
+    <meta name="description" content="Assignment 2 Web Development - COS10005">
+    <meta name="author" content="Nguyen Vu Duy Minh">
+    <link href="css/style.css" rel="stylesheet">
+    <title>Duy Minh's Assignment 2</title>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo"><img src="images/logo.png" alt="Dreamy Cafe Logo" id="img-logo"></a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a class="highlight-link" href="features.html">Features</a></li>
+                <li><a href="registration.html"><img src="images/user.png" alt="Register" id="img-register"></a></li>
+                <li><a href="order.html"><img src="images/cart.png" alt="Order" id="img-order"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="features-container">
+            <div class="white-container">
+                <h1>Features Implemented</h1>
+                <ol>
+                    <li>
+                        I have highlighted the menu item in the navigator corresponding to the current webpage by changing the opacity of the navigation links <span class="features-bold">(in all pages)</span>.
+                    </li>
+                    <li>
+                        I have created a checkbox with label “same as delivery address” near the fields for billing address <span class="features-bold">(in order.html)</span>. When this checkbox is checked, the fields for billing address will be automatically filled with the delivery address. If the delivery address is not completed when this checkbox is checked, it will display an alert: “Please enter your delivery address first”.
+                    </li>
+                    <li>
+                        Three options will be shown when user choose online paying method: Visa, MasterCard and American Express <span class="features-bold">(in order.html)</span>. Based on the type of credit card, the length of the credit card number will be limited, 16 digits for Visa and MasterCard, 15 digits for American Express.
+                    </li>
+                </ol>
+            </div>
+        </section>
+    </main>
+</body>

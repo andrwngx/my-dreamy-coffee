@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Homepage" >
+    <meta name="description" content="Assignment 2 Web Development - COS10005">
+    <meta name="author" content="Nguyen Vu Duy Minh">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/registration.js"></script>
+    <title>Duy Minh's Assignment 2</title>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <header>
+        <a href="index.html" class="logo"><img src="images/logo.png" alt="Dreamy Cafe Logo" id="img-logo"></a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="features.html">Features</a></li>
+                <li><a class="highlight-link" href="registration.html"><img src="images/user.png" alt="Register" id="img-register"></a></li>
+                <li><a href="order.html"><img src="images/cart.png" alt="Order" id="img-order"></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Registration Form -->
+    <main>
+        <section>
+            <div class="white-container">
+                <form id="registration-form" method="post" action="http://mercury.swin.edu.au/it000000/cos10005/regtest.php">
+                    <h1>Register</h1>
+                    <p><i><span class="required-field">*</span>Required</i></p>
+                    <hr><br>
+                    <label for="uid"><b>Username</b><span class="required-field">*</span></label>
+                    <input type="text" placeholder="" name="uid" id="uid">
+
+                    <label for="email"><b>Email</b><span class="required-field">*</span></label>
+                    <input type="text" placeholder="Example: abc@gmail.com" name="email" id="email">
+
+                    <label for="pwd1"><b>Password</b><span class="required-field">*</span></label>
+                    <input type="password" placeholder="" name="pwd1" id="pwd1">
+
+                    <label for="pwd2"><b>Repeat Password</b><span class="required-field">*</span></label>
+                    <input type="password" placeholder="" name="pwd2" id="pwd2">
+
+                    <label for="postcode"><b>Postcode</b><span class="required-field">*</span></label>
+                    <input type="text" placeholder="Example: 1234" name="postcode" id="postcode">
+
+                    <label for="gender"><b>Gender</b><span class="required-field">*</span></label>
+                    <select name="gender" id="gender">
+                        <option value=""> -- Select An Option -- </option>
+                        <option id="gender-male" value="male">Male</option>
+                        <option id="gender-female" value="female">Female</option>
+                        <option id="gender-others" value="others">Rather not say</option>
+                    </select><br><br>
+
+                    <label><b>Do you wish to receive any updates from Dreamy Coffee</b><span class="required-field">*</span></label>
+                    <input id="updates-y" type="radio" name="receive-updates" value="yes" class="receive-updates"><span>Yes</span>
+                    <input id="updates-n" type="radio" name="receive-updates" value="no" class="receive-updates" ><span>No</span><br><br>
+                    
+                    <input type="checkbox" name="submit-check" id="submit-checked" value="checked">
+                    <label>I'm ready to make an account!<span class="required-field">*</span></label>
+
+                    <button type="submit" class="submit-btn">REGISTER</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <br><br>
+        <div class="footer-content-div">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <br>
+                    <img src="images/logo-with-text.png" alt="Dreamy Cafe Logo">
+                </div>
+                <br><p>
+                    No. 2 Duong Khue, Cau Giay District, Hanoi, Vietnam
+                </p>
+            </div>
+        </div>
+        <div class="footer-copyright-div">
+            <div class="footer-copyright">
+                <h3>Copyright &copy;2022. Designed by Duy Minh</h3>
+            </div>
+        </div>
+    </footer>
+</body>
